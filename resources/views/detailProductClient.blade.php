@@ -71,7 +71,7 @@
             <header class="lg:px-16 px-4 flex flex-wrap items-center py-4">
                 <div class="flex-1 flex justify-between items-center">
                     <a href="#" class="text-4xl font-extrabold text-white">
-                        <img src="{{ asset('storage/img/logo.png') }}" class="h-20">
+                        <img src="{{ asset('storage/img/logo.png') }}" class="h-20 rounded-full">
                     </a>
                 </div>
                     @include('components/nav_landing')
@@ -91,7 +91,7 @@
                 </div>                
                 <section class="text-gray-600 body-font overflow-hidden">
                     <div class="container px-5 mx-auto">
-                        <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                        <div class="lg:w-4/5 mx-auto flex flex-wrap min-h-screen">
                             <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto max-h-96 md:h-32 sm:h-24 object-cover object-center rounded cursor-pointer" src="{{ asset('storage/'.$product->url) }}" id="product-image">
                             <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
                                 <h2 class="text-sm title-font text-gray-50 tracking-widest">{{ $product->brand }}</h2>
@@ -104,7 +104,7 @@
                                 <div class="flex">
                                     <span class="title-font font-medium text-2xl text-gray-50">${{ $product->price }}</span>
                                     @if(Auth::check())
-                                    <form action="{{ route('addToCart', $product->id) }}" method="POST" class="m-5 w-full">
+                                    <form action="{{ route('addToCart', $product->id) }}" method="POST" class="m-0 w-full flex justify-end">
                                         @csrf
                                         <button type="submit" class="bg-[#34482D] text-white font-semibold py-2 rounded-lg shadow-lg hover:bg-[#078C03] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">+ Agregar al carrito</button>
                                     </form>

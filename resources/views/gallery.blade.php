@@ -26,7 +26,7 @@
             <header class="lg:px-16 px-4 flex flex-wrap items-center py-4">
                 <div class="flex-1 flex justify-between items-center">
                     <a href="#" class="text-4xl font-extrabold text-white">
-                        <img src="{{ asset('storage/img/logo.png') }}" class="h-20">
+                        <img src="{{ asset('storage/img/logo.png') }}" class="h-20 rounded-full">
                     </a>
                 </div>
                 @include('components/nav_landing')
@@ -40,19 +40,6 @@
 
                 <!-- Sección combinada para videos y galería -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
-                    <!-- Videos destacados -->
-                    <a href="https://www.youtube.com/watch?v=rdPKvCW2yME" class="relative rounded overflow-hidden shadow-lg">
-                        <iframe class="w-full h-64" src="https://www.youtube.com/embed/rdPKvCW2yME" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </a>
-                    <a href="https://www.youtube.com/watch?v=nR9mNvd86B8" class="relative rounded overflow-hidden shadow-lg">
-                        <iframe class="w-full h-64" src="https://www.youtube.com/embed/nR9mNvd86B8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </a>
-                    <a href="https://www.youtube.com/watch?v=1pYH6FndU7Q" class="relative rounded overflow-hidden shadow-lg">
-                        <iframe class="w-full h-64" src="https://www.youtube.com/embed/1pYH6FndU7Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </a>
-                    <a href="https://www.youtube.com/watch?v=FlVOrEAn9R8" class="relative rounded overflow-hidden shadow-lg">
-                        <iframe class="w-full h-64" src="https://www.youtube.com/embed/FlVOrEAn9R8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </a>
 
                     <!-- Sección de Galería -->
                     @foreach ($gallery as $gallerys)

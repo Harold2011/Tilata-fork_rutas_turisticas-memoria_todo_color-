@@ -19,7 +19,7 @@
         @include('components.nav_head_admin')
         <div class="w-full overflow-x-hidden border-t flex flex-col">
             <main class="w-full flex-grow p-6">
-                <h1 class="text-3xl text-black pb-6">Rutas</h1>
+                <h1 class="text-3xl text-black pb-6">Talleres</h1>
                 <div class="bg-white overflow-auto grid grid-cols-2 gap-4 p-10">
                     <a href="{{ route('registerRoute') }}"><button class="w-full bg-white cta-btn font-semibold py-2 mt-3 rounded-lg shadow-lg hover:shadow-xl hover:bg-gray-300 flex items-center justify-center">
                         <i class="fas fa-save mr-3"></i> Registrar
@@ -35,7 +35,7 @@
                         <table class="min-w-full bg-white mt-4">
                             <thead class=" bg-[#34482D] text-white">
                                 <tr>
-                                    <th class="w-1/6 text-left py-3 px-4 uppercase font-semibold text-sm">ID Ruta</th>
+                                    <th class="w-1/6 text-left py-3 px-4 uppercase font-semibold text-sm">ID Taller</th>
                                     <th class="w-1/6 text-left py-3 px-4 uppercase font-semibold text-sm">Nombre</th>
                                     <th class="w-1/6 text-left py-3 px-4 uppercase font-semibold text-sm">Descripcion</th>
                                     <th class="w-1/6 text-left py-3 px-4 uppercase font-semibold text-sm">Contacto</th>

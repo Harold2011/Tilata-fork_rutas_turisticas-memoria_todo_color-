@@ -42,7 +42,7 @@
                         </video>
                         <div class="w-full md:w-2/3 flex flex-col mb-16 items-center text-center">
                             <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-50">Vive experiencias con realidad aumentada</h1>
-                            <p class="mb-8 leading-relaxed text-gray-50">Descarga la app y realioza el tour guiado y vive experiencia memorables</p>
+                            <p class="mb-8 leading-relaxed text-gray-50">Descarga la app y realiza el tour guiado y vive experiencia memorables</p>
                             <div class="flex">
                                 <button class="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 512 512">

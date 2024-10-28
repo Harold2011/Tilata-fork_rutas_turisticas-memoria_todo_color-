@@ -63,7 +63,7 @@
             <header class="lg:px-16 px-4 flex flex-wrap items-center py-4">
                 <div class="flex-1 flex justify-between items-center">
                     <a href="#" class="text-4xl font-extrabold text-white">
-                        <img src="{{ asset('storage/img/logo.png') }}" class="h-20">
+                        <img src="{{ asset('storage/img/logo.png') }}" class="h-20 rounded-full">
                     </a>
                 </div>
                     @include('components/nav_landing')
@@ -80,9 +80,9 @@
                                     <a href="{{ route('viewProduct', $product->id) }}">
                                         <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">{{ $product->name }}</h5>
                                     </a>
-                                    <div class="flex items-center mt-2.5 mb-5 flex-grow">
+                                    <!-- <div class="flex items-center mt-2.5 mb-5 flex-grow">
                                         <p>{{ $product->description }}</p>
-                                    </div>
+                                    </div> -->
                                     <div class="flex items-center justify-between">
                                         <span class="text-3xl font-bold text-gray-900 dark:text-white">$ {{ $product->price }}</span>
                                         @if(Auth::check())

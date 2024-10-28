@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Rutas</title>
+    <title>Talleres</title>
     @vite('resources/css/app.css')
     <style>
         .background-fixed {
@@ -26,7 +26,7 @@
             <header class="lg:px-16 px-4 flex flex-wrap items-center py-4">
                 <div class="flex-1 flex justify-between items-center">
                     <a href="#" class="text-4xl font-extrabold text-white">
-                        <img src="{{ asset('storage/img/logo.png') }}" class="h-20">
+                        <img src="{{ asset('storage/img/logo.png') }}" class="h-20 rounded-full">
                     </a>
                 </div>
                 @include('components/nav_landing')
@@ -35,8 +35,8 @@
                 <section class="text-gray-600 body-font">
                     <div class="container px-5 py-15 mx-auto">
                         <div class="flex flex-col text-center w-full mb-20">
-                            <h1 class="text-2xl font-medium title-font mb-4 text-gray-100">¿Quieres vivir la experiencia más de cerca?</h1>
-                            <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-100">Agenda una de nuestras rutas.</p>
+                            <h1 class="text-2xl font-medium title-font mb-4 text-gray-100">¿Quieres Aprender sobre el temas de las plantas?</h1>
+                            <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-100">Acá te podemos ayudar con los diferentes talleres que tenemos para ti.</p>
                         </div>
                         <div class="flex flex-wrap -m-4">
                             @foreach ($route as $routes)
@@ -47,7 +47,7 @@
                                             <h2 class="title-font font-medium text-lg text-gray-900">{{ $routes->name }}</h2>
                                             <h3 class="text-gray-900 mb-2">Descripción:</h3>
                                             <p class="mb-4 text-gray-800">{{ Str::limit($routes->description, 30) }}</p> <!-- Descripción limitada a 30 caracteres -->
-                                            <a href="{{ route('routes.show', $routes->id) }}" class="mb-4 text-gray-800">Clic para más información</a>
+                                            <a href="{{ route('routes.show', $routes->id) }}" class="mb-4 text-blue-800">Clic para más información</a>
                                         </div>
                                     </div>
                                 </div>
