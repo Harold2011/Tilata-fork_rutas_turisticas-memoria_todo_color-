@@ -1,7 +1,7 @@
 <aside class="relative bg-[#34482D] h-screen w-64 hidden sm:block shadow-xl">
     <div class="p-6">
         <a href="index.html" class="text-white text-3xl font-semibold uppercase hover:text-gray-300">
-            <img src="{{ asset('storage/img/logo.png') }}"/>
+            <img src="{{ asset('storage/img/logo.png') }}" class="rounded-full"/>
         </a>
     </div>
     <nav class="text-white text-base font-semibold pt-3">
@@ -20,7 +20,7 @@
             </a>
             <a href="{{ route('indexRoute') }}" class="flex items-center text-white opacity-75 hover:opacity-100 py-4 pl-6">
                 <i class="fas fa-route mr-3"></i>
-                Rutas
+                Talleres
             </a>
             <a href="{{ route('indexMessage') }}" class="flex items-center text-white opacity-75 hover:opacity-100 py-4 pl-6">
                 <i class="fas fa-envelope mr-3"></i>

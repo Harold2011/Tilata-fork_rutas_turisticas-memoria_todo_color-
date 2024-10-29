@@ -21,7 +21,7 @@
                     @role('admin')
                         <a href="{{ route('store') }}">
                             <div class="max-w-sm rounded overflow-hidden shadow-lg">
-                                <img class="w-full" src="{{ asset('storage/img/tienda.svg') }}" alt="Sunset in the mountains">
+                                <img class="w-full" src="{{ asset('storage/img/Tienda.jpg') }}" alt="Sunset in the mountains">
                                 <div class="px-6 py-4">
                                     <div class="font-bold text-xl mb-2">Productos</div>
                                     <p class="text-gray-700 text-base">
@@ -35,7 +35,7 @@
                         </a>
                         <a href="{{ route('orders') }}">
                             <div class="max-w-sm rounded overflow-hidden shadow-lg">
-                                <img class="w-full" src="{{ asset('storage/img/pedido.svg') }}" alt="Sunset in the mountains">
+                                <img class="w-full" src="{{ asset('storage/img/Pedidos.jpg') }}" alt="Sunset in the mountains">
                                 <div class="px-6 py-4">
                                     <div class="font-bold text-xl mb-2">Pedidos</div>
                                     <p class="text-gray-700 text-base">
@@ -51,7 +51,7 @@
                     @role('user')
                         <a href="{{ route('orders') }}">
                             <div class="max-w-sm rounded overflow-hidden shadow-lg">
-                                <img class="w-full" src="{{ asset('storage/img/pedido.svg') }}" alt="Sunset in the mountains">
+                                <img class="w-full" src="{{ asset('storage/img/Tienda.jpg') }}" alt="Sunset in the mountains">
                                 <div class="px-6 py-4">
                                     <div class="font-bold text-xl mb-2">Pedidos</div>
                                     <p class="text-gray-700 text-base">
@@ -65,7 +65,7 @@
                         </a>
                         <a href="{{ route('orders.product.index') }}">
                             <div class="max-w-sm rounded overflow-hidden shadow-lg">
-                                <img class="w-full" src="{{ asset('storage/img/pedidoPer.svg') }}" alt="Sunset in the mountains">
+                                <img class="w-full" src="{{ asset('storage/img/Pedidos.jpg') }}" alt="Sunset in the mountains">
                                 <div class="px-6 py-4">
                                     <div class="font-bold text-xl mb-2">Pedidos personalizados</div>
                                     <p class="text-gray-700 text-base">

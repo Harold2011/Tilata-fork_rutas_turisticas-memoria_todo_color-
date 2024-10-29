@@ -42,7 +42,7 @@
             </a>
             <a href="{{ route('indexRoute') }}" class="flex items-center text-white opacity-75 hover:opacity-100 py-4 pl-6 nav-item">
                 <i class="fas fa-route mr-3"></i>
-                Rutas
+                Talleres
             </a>
             <a href="{{ route('indexMessage') }}" class="flex items-center text-white opacity-75 hover:opacity-100 py-4 pl-6 nav-item">
                 <i class="fas fa-envelope mr-3"></i>
