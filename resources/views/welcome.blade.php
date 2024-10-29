@@ -24,12 +24,11 @@
 <body class="min-h-screen">
     <div class="relative w-full min-h-screen bg-shadow background-image overlay">
         <div class="content">
-        <header class="lg:px-16 px-4 flex flex-wrap items-center py-4">
-    <div class="flex-1 flex justify-between items-center">
+        <header class="lg:px-16 px-4 flex flex-wrap justify-between items-center py-4">
         <a href="<?php echo e(route('welcome')); ?>" class="text-4xl font-extrabold text-white">
             <img src="{{ asset('storage/img/logo.png') }}" class="h-20 rounded-full">
         </a>
-    </div>
+ 
     @include('components.nav_landing')
 </header>
 
